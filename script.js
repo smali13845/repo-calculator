@@ -20,7 +20,7 @@ function handleClick(event) {
         return;
     }
 
-    if (value === "(" || value === ")") {
+    if (btn.classList.contains("calc-button-parenthesis")) {
         currentInput += value;
         display.textContent = currentInput;
         return;
